@@ -22,7 +22,7 @@
   --bg-page: #f1f5f9;
   --text-primary: #1e293b;
   --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-muted: #64748b;
   --border-color: #e2e8f0;
   --radius: 10px;
   --radius-lg: 14px;
@@ -1236,7 +1236,7 @@ body {
 
 @media (max-width: 480px) {
   .day { min-height: 58px; padding: 3px; }
-  .post-chip { font-size: 9px; padding: 1px 3px; gap: 2px; }
+  .post-chip { font-size: 12px; padding: 4px 6px; gap: 3px; min-height: 28px; }
   .post-chip .channel-icon { display: none; }
   .day-number { font-size: 11px; }
   .header-title { font-size: 18px; }
