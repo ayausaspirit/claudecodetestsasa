@@ -7,6 +7,7 @@
 <!-- SEO基本タグ -->
 <title>コンテンツカレンダー 無料｜SNS・ブログ投稿スケジュール管理ツール【登録不要】</title>
 <meta name="description" content="登録不要・完全無料のコンテンツカレンダー。ブログ・SNS・メールの投稿スケジュールをカレンダーで一元管理し、効率的なコンテンツ運用を実現。データは端末のみに保存でプライバシーも安心。今すぐブラウザで使えます。">
+<!-- TODO: デプロイ時に実際のURLに変更すること -->
 <link rel="canonical" href="https://example.com/">
 <meta name="theme-color" content="#1f2937">
 <meta name="robots" content="index, follow">
@@ -26,86 +27,6 @@
 <meta name="twitter:title" content="コンテンツカレンダー 無料｜登録不要でSNS・ブログ投稿を一元管理">
 <meta name="twitter:description" content="完全無料・登録不要。ブログ・SNS・メールの投稿スケジュールをカレンダーで一元管理。データは端末のみに保存、オフラインでも動作する軽量ツール。">
 <meta name="twitter:image" content="https://example.com/ogp.png">
-
-<!-- 構造化データ: SoftwareApplication -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "コンテンツカレンダー",
-  "applicationCategory": "BusinessApplication",
-  "applicationSubCategory": "コンテンツ管理ツール",
-  "operatingSystem": "Web",
-  "description": "登録不要・完全無料のコンテンツカレンダー。ブログ・SNS・メールの投稿スケジュールを一元管理できるWebアプリです。データは端末のみに保存され、プライバシーも安心。",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "JPY"
-  },
-  "browserRequirements": "HTML5対応ブラウザ",
-  "featureList": [
-    "投稿スケジュールのカレンダー管理",
-    "ブログ・SNS・メールの一元管理",
-    "ステータス管理（下書き・レビュー・公開済み）",
-    "CSVエクスポート",
-    "タイトル・チャネル・ステータスでフィルタリング",
-    "ローカルストレージによるプライバシー保護",
-    "オフライン動作対応"
-  ],
-  "inLanguage": "ja",
-  "isAccessibleForFree": true
-}
-</script>
-
-<!-- 構造化データ: FAQPage -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "コンテンツカレンダーは本当に無料ですか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "はい、完全無料でご利用いただけます。アカウント登録も不要で、ブラウザを開くだけですぐにお使いいただけます。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "データはどこに保存されますか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "データはお使いの端末のブラウザ（ローカルストレージ）にのみ保存されます。サーバーへの送信は一切ありませんので、プライバシーも安心です。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "どのようなコンテンツを管理できますか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ブログ記事、SNS投稿、メールマガジンの3つのチャネルの投稿スケジュールを一元管理できます。各投稿には下書き・レビュー中・公開済みのステータスを設定できます。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "オフラインでも使えますか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "はい、単一のHTMLファイルで動作するため、一度読み込めばオフライン環境でもご利用いただけます。インターネット接続は必要ありません。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "CSVエクスポートはできますか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "はい、フィルタリングした投稿データをCSV形式でエクスポートできます。Excelやスプレッドシートでの分析・共有に便利です。"
-      }
-    }
-  ]
-}
-</script>
 
 <link rel="preload" href="styles.css" as="style">
 <link rel="stylesheet" href="styles.css">
@@ -131,12 +52,10 @@
   </nav>
 </header>
 
-<h1 class="visually-hidden">無料コンテンツカレンダー｜ブログ・SNS投稿スケジュール管理ツール</h1>
-
 <section class="hero" id="heroSection" aria-label="コンテンツカレンダーの紹介">
   <button class="hero-close" id="btnHeroClose" aria-label="紹介セクションを閉じる">&times;</button>
   <div class="hero-content">
-    <p class="hero-heading" aria-hidden="true">無料コンテンツカレンダー｜ブログ・SNS投稿スケジュール管理</p>
+    <h1 class="hero-heading">無料コンテンツカレンダー｜ブログ・SNS投稿スケジュール管理ツール</h1>
     <p class="hero-sub">投稿スケジュール、もう迷わない。</p>
     <p>ブログ・SNS・メールの投稿計画をカレンダーで一元管理。<br>完全無料・登録不要・データは端末のみに保存。</p>
     <a href="#calendarDays" class="hero-cta" role="button">今すぐ無料で使う</a>
@@ -349,6 +268,14 @@ let filterStatus = '';
 // DOM参照キャッシュ
 const $ = (id) => document.getElementById(id);
 
+function debounce(fn, delay) {
+  let timer;
+  return function(...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn.apply(this, args), delay);
+  };
+}
+
 function generateId() {
   return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10);
 }
@@ -460,9 +387,34 @@ function bindEvents() {
   const heroCloseBtn = $('btnHeroClose');
   if (heroCloseBtn) heroCloseBtn.addEventListener('click', dismissHero);
 
-  $('filterSearch').addEventListener('input', applyFilters);
+  const debouncedApplyFilters = debounce(applyFilters, 300);
+  $('filterSearch').addEventListener('input', debouncedApplyFilters);
   $('filterChannel').addEventListener('change', applyFilters);
   $('filterStatus').addEventListener('change', applyFilters);
+
+  // イベントデリゲーション: カレンダーグリッド
+  $('calendarDays').addEventListener('click', (e) => {
+    const chip = e.target.closest('.post-chip');
+    if (chip && chip.dataset.postId) {
+      e.stopPropagation();
+      openEdit(chip.dataset.postId);
+      return;
+    }
+    const dayEl = e.target.closest('.day');
+    if (dayEl && dayEl.dataset.date) {
+      openAdd(dayEl.dataset.date);
+    }
+  });
+  $('calendarDays').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      const chip = e.target.closest('.post-chip');
+      if (chip && chip.dataset.postId) {
+        e.preventDefault();
+        e.stopPropagation();
+        openEdit(chip.dataset.postId);
+      }
+    }
+  });
 
   document.addEventListener('keydown', (e) => {
     const overlay = $('modalOverlay');
@@ -595,10 +547,7 @@ function renderDays() {
       chip.setAttribute('role', 'button');
       chip.setAttribute('tabindex', '0');
       chip.setAttribute('aria-label', `${p.title}（${CHANNEL_LABELS[p.channel]}、${STATUS_LABELS[p.status]}）`);
-      chip.addEventListener('click', (e) => { e.stopPropagation(); openEdit(p.id); });
-      chip.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); openEdit(p.id); }
-      });
+      chip.dataset.postId = p.id;
       dayEl.appendChild(chip);
     });
 
@@ -609,7 +558,7 @@ function renderDays() {
       dayEl.appendChild(more);
     }
 
-    dayEl.addEventListener('click', () => openAdd(dateStr));
+    dayEl.dataset.date = dateStr;
     fragment.appendChild(dayEl);
   }
 
@@ -726,7 +675,6 @@ function showError(message) {
   titleInput.setAttribute('aria-describedby', 'postTitleError');
   titleInput.parentNode.appendChild(errorDiv);
   titleInput.focus();
-  setTimeout(clearError, ERROR_DISPLAY_DURATION);
 }
 
 function clearError() {
@@ -770,6 +718,7 @@ function savePost() {
 
 function deletePost() {
   if (!editingId) return;
+  if (!confirm('この投稿を削除しますか？')) return;
   posts = posts.filter(p => p.id !== editingId);
   savePosts();
   closeModal();
@@ -818,6 +767,86 @@ function exportCsv() {
 }
 
 init();
+</script>
+
+<!-- 構造化データ: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "コンテンツカレンダー",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "コンテンツ管理ツール",
+  "operatingSystem": "Web",
+  "description": "登録不要・完全無料のコンテンツカレンダー。ブログ・SNS・メールの投稿スケジュールを一元管理できるWebアプリです。データは端末のみに保存され、プライバシーも安心。",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY"
+  },
+  "browserRequirements": "HTML5対応ブラウザ",
+  "featureList": [
+    "投稿スケジュールのカレンダー管理",
+    "ブログ・SNS・メールの一元管理",
+    "ステータス管理（下書き・レビュー・公開済み）",
+    "CSVエクスポート",
+    "タイトル・チャネル・ステータスでフィルタリング",
+    "ローカルストレージによるプライバシー保護",
+    "オフライン動作対応"
+  ],
+  "inLanguage": "ja",
+  "isAccessibleForFree": true
+}
+</script>
+
+<!-- 構造化データ: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "コンテンツカレンダーは本当に無料ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、完全無料でご利用いただけます。アカウント登録も不要で、ブラウザを開くだけですぐにお使いいただけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "データはどこに保存されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "データはお使いの端末のブラウザ（ローカルストレージ）にのみ保存されます。サーバーへの送信は一切ありませんので、プライバシーも安心です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "どのようなコンテンツを管理できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ブログ記事、SNS投稿、メールマガジンの3つのチャネルの投稿スケジュールを一元管理できます。各投稿には下書き・レビュー中・公開済みのステータスを設定できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "オフラインでも使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、単一のHTMLファイルで動作するため、一度読み込めばオフライン環境でもご利用いただけます。インターネット接続は必要ありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CSVエクスポートはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、フィルタリングした投稿データをCSV形式でエクスポートできます。Excelやスプレッドシートでの分析・共有に便利です。"
+      }
+    }
+  ]
+}
 </script>
 </body>
 </html>
